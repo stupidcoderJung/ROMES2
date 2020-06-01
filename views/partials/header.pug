@@ -1,0 +1,13 @@
+header.header
+    .header__column
+        a(href=routes.globalHome)
+            i.fab.fa-youtube.fa-5x
+    .header__column
+        form(action=routes.globalSearch, method = "get")
+            input(type="text",placeholder="Search by term...",name = "term")
+    .header__column
+        ul
+            li
+                a(href=routes.globalJoin) Join
+            li
+                a(href=routes.globalLogin) Log In
