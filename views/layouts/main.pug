@@ -2,9 +2,12 @@ doctype html
 html
     head
         script(src="https://kit.fontawesome.com/bcf19e5e4c.js", crossorigin="anonymous")
-        link(type="text/css" rel="stylesheet" href="../css/common.css")
+        style
+            include ../css/header.css
+            include ../css/sidebar.css
         title hello
     body(class="o_web_client")
+        include ../partials/header
         nav.o_main_navbar
             a.o_menu_brand(role="button") 재고관리
     

@@ -1,13 +1,24 @@
+include ./sidebar.pug
 header.header
-    .header__column
-        a(href=routes.globalHome)
-            i.fab.fa-youtube.fa-5x
-    .header__column
-        form(action=routes.globalSearch, method = "get")
-            input(type="text",placeholder="Search by term...",name = "term")
-    .header__column
-        ul
-            li
-                a(href=routes.globalJoin) Join
-            li
-                a(href=routes.globalLogin) Log In
+    .topnav
+        .active(href="#") 
+            i.fas.fa-cogs.openbtn() #{menuName}
+        a.active(href="#home") ROMES
+        a.active(href="#news") 기준정보관리
+        a.active(href="#contact") 메뉴N
+        a.active(href="#about") About
+
+
+
+    //- .header__column
+    //-     a(href=routes.globalHome)
+    //-         i.fab.fa-youtube.fa-5x
+    //- .header__column
+    //-     form(action=routes.globalSearch, method = "get")
+    //-         input(type="text",placeholder="Search by term...",name = "term")
+    //- .header__column
+    //-     ul
+    //-         li
+    //-             a(href=routes.globalJoin) Join
+    //-         li
+    //-             a(href=routes.globalLogin) Log In
